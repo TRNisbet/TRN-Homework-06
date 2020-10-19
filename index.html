@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRN Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15f642410e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar bg-dark justify-content-center">
+        <h1>Weather Dashboard</h1>
+    </nav>
+    <!-- Side bar for city search and storage -->
+    <div class="row"> 
+        <div class="col-3 m-2 bg-light sidebar">
+            <h3>City Search:</h3>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Input City Here" id="userInputCity">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="searchBtn"><span><i class="fas fa-search"></i></span></button>
+                    </div>
+                </div>
+                
+        </div>
+    
+
+
+    <!-- Need previous city searches to go here in line with city search  -->
+
+    
+        <div class="col-9">
+            <div class="card">
+                <div class="card-body">
+                    <h3 id="displayCityDate" class="card-title">City and Date</h3>
+                    <p id="displayTemp">Temperature: </p>
+                    <p id="displayHumidity">Humidity: </p>
+                    <p id="displayWind">Wind Speed: </p>
+                    <p id="displayUV">UV Index </p>
+                </div>
+            </div>
+        </div>
+    
+
+
+        <div class="row">
+            <div class="col-12">
+                <h3>5 - day Forecast </h3>
+             <!-- need 5 cards for weather days but info is displaying in the same column -->
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+        </script>
+    <script src="script.js">
+    </script>
+</body>
+</html>

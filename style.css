@@ -1,0 +1,35 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: georgia, sans-serif;
+}
+
+
+
+
+h1 {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.main {
+    color: black;
+    float: right;
+    
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    width: 100%;
+}
+
+.sidebar {
+    float: left;
+}
+
+#searchBtn {
+    background-color: blue;
+    color: whitesmoke;
+}
