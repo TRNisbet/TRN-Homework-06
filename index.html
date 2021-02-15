@@ -10,76 +10,60 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <title>TRN HW6 - Weather API</title>
 </head>
 <body>
+    
 <div>
-    <nav class="navbar bg-dark justify-content-center">
-        <h1>Weather Dashboard</h1>
+    <nav class="navbar bg-primary justify-content-center">
+        <h1>TRN HW6 - Weather API</h1>
     </nav>
-    <!-- Side bar for city search and storage -->
-    <div class="row"> 
-        <div class="col-3 m-2 bg-light sidebar">
-            <h3>City Search:</h3>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Input City Here" id="userInputCity">
+
+    <div class="main">
+    <!-- Nav Bar Left Side (City Search and Pre City List) -->
+        <nav class="searchNav">
+            <h2>Enter a City or Zipcode</h2>
+            <form class="form-inline">
+                <input type="search" class="form-control cityInput" placeholder="Enter City or Zipcode" aria-label="Search">
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="button" id="searchBtn"><span><i class="fas fa-search"></i></span></button>
+                        <button class="btn btn-primary searchBtn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
-                </div> 
-                <div class="card">
-            <ul class="list-group list-group-flush"> 
-                <li class="list-group-item">Test City</li>
-            </ul>    
-            </div>
-        </div>
-    
+            </form>
+                
+            <div class="cities btn-group-vertical"></div>
+                <button class="clear btn btn-primary">Clear Cities</button>
+        </nav>
 
+    <!-- Weather Forecast Display -->
 
-    <!-- Need previous city searches to go here in line with city search  -->
-
-    
-        <div class="col-8">
-            <div class="card">
-                <div class="card-body">
-                    <h3 id="displayCityDate" class="card-title">City and Date</h3>
-                    <p id="displayTemp">Temperature: </p>
-                    <p id="displayHumidity">Humidity: </p>
-                    <p id="displayWind">Wind Speed: </p>
-                    <p id="displayUV">UV Index </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <h3>5 - day Forecast </h3>
-                    <!-- need 5 cards for weather days but info is displaying in the same column -->
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="card">
-                                <div class="card-body bg-primary text-white">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+    <div id="content">
+        <div class="card">
+            
+            <div class="card-body">
+                <h2 class="cityName"></h2>
+                <p class="card-text">Temperature: <span class='tempSpan'></span></p>
+                <p class="card-text">Humidity: <span class='humidSpan'></span></p>
+                <p class="card-text">Wind Speed: <span class='windSpan'></span></p>
+                <p class="card-text">UV Index: <span class='uvSpan'></span></p>
             </div>
 
         </div>
-    
 
+        <h3 class="forecastHeader"></h3>
+        <div class="forecastCards"></div>
 
-        
     </div>
-</div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
-    </script>
+
+
+  </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-        crossorigin="anonymous">
-        </script>
-    <script src="script.js">
-    </script>
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js">    </script>
 </body>
+
 </html>
+

@@ -2,37 +2,65 @@
     box-sizing: border-box;
 }
 
-li {
-    list-style-type: none;
-    border: blue;
-    /* find out how the damn box should look on bootstrap put the stylings HERE  */
+h1 {
+  text-align: center;
+  color:black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-
-h1 {
-    color: whitesmoke;
-    padding: 10px;
+h2 {
+    color: black;
 }
 
 .main {
-    color: black;
-    float: right;
-    
-}
-
-.hide {
-    display: none;
-}
-
-.container {
+    display: flex;
     width: 100%;
 }
 
-.sidebar {
-    float: left;
+.searchNav {
+    width: 25vw;
+    height: 100vh;
+    background: white;
+
 }
 
-#searchBtn {
-        color: whitesmoke;
+.card {
+    margin: 15px;
+    width: 75vw;
 }
 
+.forecast {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    background-color: rgb(53, 126, 223);
+    color: rgb(252, 251, 246);
+    width: 10vw;
+}
+
+.forecastHeader {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+.cities {
+    margin-top: 20px;
+    width: 90%;
+}
+
+.city {
+   margin-right: 10px;
+   margin-left: 10px;
+   background: white;
+   text-align: left;
+   width: 90%;
+}
+
+.clear {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 10px;
+   margin-left: 10px;
+}
