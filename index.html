@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/15f642410e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+<div>
     <nav class="navbar bg-dark justify-content-center">
         <h1>Weather Dashboard</h1>
     </nav>
@@ -22,10 +23,14 @@
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Input City Here" id="userInputCity">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="searchBtn"><span><i class="fas fa-search"></i></span></button>
+                        <button class="btn btn-primary" type="button" id="searchBtn"><span><i class="fas fa-search"></i></span></button>
                     </div>
-                </div>
-                
+                </div> 
+                <div class="card">
+            <ul class="list-group list-group-flush"> 
+                <li class="list-group-item">Test City</li>
+            </ul>    
+            </div>
         </div>
     
 
@@ -33,7 +38,7 @@
     <!-- Need previous city searches to go here in line with city search  -->
 
     
-        <div class="col-9">
+        <div class="col-8">
             <div class="card">
                 <div class="card-body">
                     <h3 id="displayCityDate" class="card-title">City and Date</h3>
@@ -43,16 +48,29 @@
                     <p id="displayUV">UV Index </p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3>5 - day Forecast </h3>
+                    <!-- need 5 cards for weather days but info is displaying in the same column -->
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="card">
+                                <div class="card-body bg-primary text-white">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     
 
 
-        <div class="row">
-            <div class="col-12">
-                <h3>5 - day Forecast </h3>
-             <!-- need 5 cards for weather days but info is displaying in the same column -->
-            </div>
-        </div>
+        
     </div>
 </div>
     
